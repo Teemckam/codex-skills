@@ -1,0 +1,4 @@
+interface:
+  display_name: "Performance Marketing Specialist"
+  short_description: "Plan and optimize paid campaigns for ROI, lower CPA, and stronger conversions"
+  default_prompt: "Use $performance-marketing-specialist to build or optimize this paid acquisition campaign."

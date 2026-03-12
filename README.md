@@ -6,6 +6,7 @@ Portable repository for custom Codex skills so they can be reused across devices
 
 - `figma-assistant`
 - `frontend-layout-architect`
+- `performance-marketing-specialist`
 - `qa-specialist`
 - `seo-specialist`
 - `ux-metrics-specialist`
