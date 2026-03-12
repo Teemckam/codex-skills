@@ -1,0 +1,4 @@
+interface:
+  display_name: "Website UI/UX Builder"
+  short_description: "Design and structure websites with strong UX, sections, and visual hierarchy"
+  default_prompt: "Use $website-uiux-builder to create or improve this website structure, UI, and UX."

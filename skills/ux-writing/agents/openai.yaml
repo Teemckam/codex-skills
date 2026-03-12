@@ -1,0 +1,4 @@
+interface:
+  display_name: "UX Writing"
+  short_description: "Write clear product copy for buttons, errors, and states"
+  default_prompt: "Use $ux-writing to improve this interface copy for clarity, brevity, and action."

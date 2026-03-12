@@ -1,0 +1,4 @@
+interface:
+  display_name: "Frontend Layout Architect"
+  short_description: "Turn UI into clean, responsive, production-ready frontend code"
+  default_prompt: "Use $frontend-layout-architect to build or refactor this layout into clean frontend code."

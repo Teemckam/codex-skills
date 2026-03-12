@@ -1,0 +1,4 @@
+interface:
+  display_name: "UX Metrics Specialist"
+  short_description: "Analyze product metrics and turn them into measurable UX/UI decisions"
+  default_prompt: "Use $ux-metrics-specialist to analyze these metrics, diagnose the UX/UI causes, and suggest measurable improvements."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "SEO Specialist"
+  short_description: "Audit and improve technical SEO, content SEO, and organic visibility"
+  default_prompt: "Use $seo-specialist to audit this site or page and recommend sustainable SEO improvements."

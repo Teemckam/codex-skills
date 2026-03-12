@@ -1,0 +1,4 @@
+interface:
+  display_name: "QA Specialist"
+  short_description: "Find defects, review quality risks, and strengthen testing coverage"
+  default_prompt: "Use $qa-specialist to assess quality risks, find issues, and recommend testing improvements."

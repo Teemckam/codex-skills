@@ -1,0 +1,4 @@
+interface:
+  display_name: "UX/UI Specialist"
+  short_description: "Design product UI, systems, and motion-ready interface flows"
+  default_prompt: "Use $ux-ui-specialist to design or audit this interface, define the system, and suggest usable motion."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "UX Research Specialist"
+  short_description: "Plan, analyze, and synthesize UX research into product decisions"
+  default_prompt: "Use $ux-research-specialist to plan or analyze UX research for this product or interface."

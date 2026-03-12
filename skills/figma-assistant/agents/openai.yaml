@@ -1,0 +1,4 @@
+interface:
+  display_name: "Figma Assistant"
+  short_description: "Organize Figma components, frames, and naming systems"
+  default_prompt: "Use $figma-assistant to structure this Figma file, component set, or naming system."
