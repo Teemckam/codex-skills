@@ -25,8 +25,12 @@ codex-skills/
   scripts/
     install-macos.sh
     sync-from-local-macos.sh
+    publish-macos.sh
+    update-macos.sh
     install-windows.ps1
     sync-from-local-windows.ps1
+    publish-windows.ps1
+    update-windows.ps1
   README.md
 ```
 
@@ -57,6 +61,18 @@ bash scripts/install-macos.sh
 bash scripts/sync-from-local-macos.sh
 ```
 
+## Publish changes from macOS to GitHub
+
+This will:
+
+1. sync local Codex skills back into the repo
+2. create a git commit
+3. push to `origin main`
+
+```bash
+bash scripts/publish-macos.sh "Update skills"
+```
+
 ## Install on Windows
 
 From PowerShell in the repository root:
@@ -71,16 +87,43 @@ powershell -ExecutionPolicy Bypass -File .\scripts\install-windows.ps1
 powershell -ExecutionPolicy Bypass -File .\scripts\sync-from-local-windows.ps1
 ```
 
+## Publish changes from Windows to GitHub
+
+This will:
+
+1. sync local Codex skills back into the repo
+2. create a git commit
+3. push to `origin main`
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\publish-windows.ps1 -Message "Update skills"
+```
+
+## Update another machine from GitHub
+
+macOS:
+
+```bash
+bash scripts/update-macos.sh
+```
+
+Windows:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\update-windows.ps1
+```
+
 ## Recommended workflow
 
 1. Keep this repository in Git, ideally private.
 2. Clone it on every machine where you use Codex.
 3. Run the install script on that machine.
-4. If you edit a skill locally through Codex, run the sync script to pull the updated version back into this repository.
-5. Commit and push the changes so your other devices can pull them.
+4. If you edit a skill locally through Codex, run the publish script on that machine.
+5. On the other machine, run the update script.
 
 ## Notes
 
 - The sync scripts only sync the custom skills already tracked in this repo.
 - They do not pull built-in system skills into the repository.
 - Install scripts replace the tracked skill folders in your local Codex skills directory with the versions from this repo.
+- Publish scripts only create a commit if there are tracked changes after sync.
